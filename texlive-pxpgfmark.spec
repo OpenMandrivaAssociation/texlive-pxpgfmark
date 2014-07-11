@@ -6,7 +6,7 @@
 # catalog-version 0.2
 Name:		texlive-pxpgfmark
 Version:	0.2
-Release:	6
+Release:	7
 Summary:	e-pTeX driver for PGF inter-picture connections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pxpgfmark
