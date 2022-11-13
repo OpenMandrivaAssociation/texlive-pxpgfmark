@@ -1,18 +1,12 @@
-# revision 30212
-# category Package
-# catalog-ctan /graphics/pgf/contrib/pxpgfmark
-# catalog-date 2013-05-02 11:19:37 +0200
-# catalog-license other-free
-# catalog-version 0.2
 Name:		texlive-pxpgfmark
-Version:	0.2
-Release:	10
+Version:	30212
+Release:	1
 Summary:	e-pTeX driver for PGF inter-picture connections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pxpgfmark
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxpgfmark.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxpgfmark.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxpgfmark.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxpgfmark.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ The distributed drivers do not support the PGF feature of
 package uses existing features of dvipdfmx to fix this problem.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,7 +33,7 @@ package uses existing features of dvipdfmx to fix this problem.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
