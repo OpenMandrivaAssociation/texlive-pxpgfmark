@@ -1,6 +1,6 @@
 Name:		texlive-pxpgfmark
 Version:	30212
-Release:	1
+Release:	2
 Summary:	e-pTeX driver for PGF inter-picture connections
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pxpgfmark
