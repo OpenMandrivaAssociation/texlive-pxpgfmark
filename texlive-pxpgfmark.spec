@@ -3,7 +3,7 @@ Version:	30212
 Release:	2
 Summary:	e-pTeX driver for PGF inter-picture connections
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pxpgfmark
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/pxpgfmark
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxpgfmark.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pxpgfmark.doc.r%{version}.tar.xz
